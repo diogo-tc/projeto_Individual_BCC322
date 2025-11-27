@@ -1,0 +1,75 @@
+\doxysection{Logistical\+Flow Class Reference}
+\hypertarget{classLogisticalFlow}{}\label{classLogisticalFlow}\index{LogisticalFlow@{LogisticalFlow}}
+
+
+Concrete flow implementation for logistical growth.  
+
+
+
+
+Inheritance diagram for Logistical\+Flow\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{classLogisticalFlow__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Logistical\+Flow\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classLogisticalFlow__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classLogisticalFlow_a9e2f4e9f75dde9399d1c662e70ef84a1}\label{classLogisticalFlow_a9e2f4e9f75dde9399d1c662e70ef84a1} 
+{\bfseries Logistical\+Flow} (std\+::string name, \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}p2)
+\item 
+\Hypertarget{classLogisticalFlow_ad0719113886b55547a08c31f785f2241}\label{classLogisticalFlow_ad0719113886b55547a08c31f785f2241} 
+{\bfseries Logistical\+Flow} (const \mbox{\hyperlink{classLogisticalFlow}{Logistical\+Flow}} \&other)
+\item 
+\Hypertarget{classLogisticalFlow_a602e6fd0695a82e247734b1fbdfee4b0}\label{classLogisticalFlow_a602e6fd0695a82e247734b1fbdfee4b0} 
+\mbox{\hyperlink{classLogisticalFlow}{Logistical\+Flow}} \& {\bfseries operator=} (const \mbox{\hyperlink{classLogisticalFlow}{Logistical\+Flow}} \&other)
+\item 
+\Hypertarget{classLogisticalFlow_ace31969e5f4979cc6048aa2a7c795e69}\label{classLogisticalFlow_ace31969e5f4979cc6048aa2a7c795e69} 
+double {\bfseries execute} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classFlow}{Flow}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFlow_ac9975e144e606242748197798e87dd32}{Flow}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \doxylink{classFlow}{Flow} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFlow_a5a65e36c874c5cd5283ac32a33eb0a8b}{Flow}} (const \mbox{\hyperlink{classFlow}{Flow}} \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Flow} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlow_a4da8089ed4e652c414180252d22c8516}{set\+Source}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}s)
+\begin{DoxyCompactList}\small\item\em Sets the source system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlow_a6187a9f827d2c699fa2176b5bf0d05dd}{set\+Target}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}t)
+\begin{DoxyCompactList}\small\item\em Sets the target system. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlow_a1f3858f90d141807377c2640fb5dd0fc}{get\+Source}} () const
+\begin{DoxyCompactList}\small\item\em Gets the source system. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlow_aff8a0f8ca8dc50d37c92ab7556e172b5}{get\+Target}} () const
+\begin{DoxyCompactList}\small\item\em Gets the target system. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classFlow_aa1ad5f820c1f10f9e19c555af8bf69f2}{equation}} ()=0
+\begin{DoxyCompactList}\small\item\em Abstract method that calculates the value transferred by the flow. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classFlow}{Flow}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} {\bfseries source}
+\begin{DoxyCompactList}\small\item\em Pointer to the flow\textquotesingle{}s source system. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} {\bfseries target}
+\begin{DoxyCompactList}\small\item\em Pointer to the flow\textquotesingle{}s target system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Concrete flow implementation for logistical growth. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+My\+Vensim/test/funcional/\mbox{\hyperlink{funcional__tests_8cpp}{funcional\+\_\+tests.\+cpp}}\end{DoxyCompactItemize}

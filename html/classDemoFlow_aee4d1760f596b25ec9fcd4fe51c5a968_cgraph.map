@@ -1,0 +1,7 @@
+<map id="DemoFlow::equation" name="DemoFlow::equation">
+<area shape="rect" id="Node000001" title="Abstract method that calculates the value transferred by the flow." alt="" coords="5,31,161,56"/>
+<area shape="rect" id="Node000002" href="$classFlow.html#a1f3858f90d141807377c2640fb5dd0fc" title="Gets the source system." alt="" coords="215,5,340,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,31,201,25,202,31,162,36"/>
+<area shape="rect" id="Node000003" href="$classSystem.html#aa7d17369d1034e7d8643a63f69d1901d" title="Gets the system&#39;s current value." alt="" coords="209,55,345,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="162,50,196,55,196,60,161,56"/>
+</map>

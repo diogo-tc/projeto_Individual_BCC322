@@ -1,0 +1,164 @@
+\doxysection{Flow Class Reference}
+\hypertarget{classFlow}{}\label{classFlow}\index{Flow@{Flow}}
+
+
+Abstract class that represents a flow between two systems.  
+
+
+
+
+{\ttfamily \#include $<$flow.\+h$>$}
+
+
+
+Inherited by Demo\+Flow, Flow\+Simple\+Rate, and Logistical\+Flow.
+
+
+
+Collaboration diagram for Flow\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{classFlow__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFlow_ac9975e144e606242748197798e87dd32}{Flow}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \doxylink{classFlow}{Flow} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFlow_a5a65e36c874c5cd5283ac32a33eb0a8b}{Flow}} (const \mbox{\hyperlink{classFlow}{Flow}} \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\Hypertarget{classFlow_a5991efa6e8cf88c4ef2125cc727db333}\label{classFlow_a5991efa6e8cf88c4ef2125cc727db333} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Flow} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlow_a4da8089ed4e652c414180252d22c8516}{set\+Source}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}s)
+\begin{DoxyCompactList}\small\item\em Sets the source system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlow_a6187a9f827d2c699fa2176b5bf0d05dd}{set\+Target}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}t)
+\begin{DoxyCompactList}\small\item\em Sets the target system. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlow_a1f3858f90d141807377c2640fb5dd0fc}{get\+Source}} () const
+\begin{DoxyCompactList}\small\item\em Gets the source system. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlow_aff8a0f8ca8dc50d37c92ab7556e172b5}{get\+Target}} () const
+\begin{DoxyCompactList}\small\item\em Gets the target system. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classFlow_aa1ad5f820c1f10f9e19c555af8bf69f2}{equation}} ()=0
+\begin{DoxyCompactList}\small\item\em Abstract method that calculates the value transferred by the flow. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classFlow_a963ca162995d112f0f30322e2bb9de63}\label{classFlow_a963ca162995d112f0f30322e2bb9de63} 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} {\bfseries source}
+\begin{DoxyCompactList}\small\item\em Pointer to the flow\textquotesingle{}s source system. \end{DoxyCompactList}\item 
+\Hypertarget{classFlow_a87be88d9bae4e927b29205faabeaf387}\label{classFlow_a87be88d9bae4e927b29205faabeaf387} 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} {\bfseries target}
+\begin{DoxyCompactList}\small\item\em Pointer to the flow\textquotesingle{}s target system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract class that represents a flow between two systems. 
+
+The \doxylink{classFlow}{Flow} class defines the basic structure for flows used in the model. Each flow has a source system and a target system, as well as an abstract \doxylink{classFlow_aa1ad5f820c1f10f9e19c555af8bf69f2}{equation()} method that must be implemented by subclasses to calculate the transferred value. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classFlow_ac9975e144e606242748197798e87dd32}\label{classFlow_ac9975e144e606242748197798e87dd32} 
+\index{Flow@{Flow}!Flow@{Flow}}
+\index{Flow@{Flow}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{Flow()}{Flow()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Flow\+::\+Flow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor for the \doxylink{classFlow}{Flow} class. 
+
+Initializes a flow with no connected systems. \Hypertarget{classFlow_a5a65e36c874c5cd5283ac32a33eb0a8b}\label{classFlow_a5a65e36c874c5cd5283ac32a33eb0a8b} 
+\index{Flow@{Flow}!Flow@{Flow}}
+\index{Flow@{Flow}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{Flow()}{Flow()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Flow\+::\+Flow (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classFlow}{Flow}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Copy constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \doxylink{classFlow}{Flow} object to be copied. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classFlow_aa1ad5f820c1f10f9e19c555af8bf69f2}\label{classFlow_aa1ad5f820c1f10f9e19c555af8bf69f2} 
+\index{Flow@{Flow}!equation@{equation}}
+\index{equation@{equation}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{equation()}{equation()}}
+{\footnotesize\ttfamily virtual double Flow\+::equation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Abstract method that calculates the value transferred by the flow. 
+
+Must be implemented by derived classes. \begin{DoxyReturn}{Returns}
+Numerical value of the flow equation. 
+\end{DoxyReturn}
+\Hypertarget{classFlow_a1f3858f90d141807377c2640fb5dd0fc}\label{classFlow_a1f3858f90d141807377c2640fb5dd0fc} 
+\index{Flow@{Flow}!getSource@{getSource}}
+\index{getSource@{getSource}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{getSource()}{getSource()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} Flow\+::get\+Source (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the source system. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the source system. 
+\end{DoxyReturn}
+\Hypertarget{classFlow_aff8a0f8ca8dc50d37c92ab7556e172b5}\label{classFlow_aff8a0f8ca8dc50d37c92ab7556e172b5} 
+\index{Flow@{Flow}!getTarget@{getTarget}}
+\index{getTarget@{getTarget}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{getTarget()}{getTarget()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} Flow\+::get\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the target system. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the target system. 
+\end{DoxyReturn}
+\Hypertarget{classFlow_a4da8089ed4e652c414180252d22c8516}\label{classFlow_a4da8089ed4e652c414180252d22c8516} 
+\index{Flow@{Flow}!setSource@{setSource}}
+\index{setSource@{setSource}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{setSource()}{setSource()}}
+{\footnotesize\ttfamily void Flow\+::set\+Source (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{s }\end{DoxyParamCaption})}
+
+
+
+Sets the source system. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Pointer to the source system. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classFlow_a6187a9f827d2c699fa2176b5bf0d05dd}\label{classFlow_a6187a9f827d2c699fa2176b5bf0d05dd} 
+\index{Flow@{Flow}!setTarget@{setTarget}}
+\index{setTarget@{setTarget}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{setTarget()}{setTarget()}}
+{\footnotesize\ttfamily void Flow\+::set\+Target (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{t }\end{DoxyParamCaption})}
+
+
+
+Sets the target system. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Pointer to the target system. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+My\+Vensim/src/flow.\+h\item 
+My\+Vensim/src/\mbox{\hyperlink{flow_8cpp}{flow.\+cpp}}\end{DoxyCompactItemize}

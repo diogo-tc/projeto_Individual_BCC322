@@ -1,0 +1,75 @@
+\doxysection{Flow\+Simple\+Rate Class Reference}
+\hypertarget{classFlowSimpleRate}{}\label{classFlowSimpleRate}\index{FlowSimpleRate@{FlowSimpleRate}}
+
+
+Concrete flow implementation for simple exponential decay/growth.  
+
+
+
+
+Inheritance diagram for Flow\+Simple\+Rate\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{classFlowSimpleRate__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Flow\+Simple\+Rate\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classFlowSimpleRate__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classFlowSimpleRate_a5b51a12fa9eb4508c13275108350aef8}\label{classFlowSimpleRate_a5b51a12fa9eb4508c13275108350aef8} 
+{\bfseries Flow\+Simple\+Rate} (std\+::string name, double rate, \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}influence)
+\item 
+\Hypertarget{classFlowSimpleRate_a5addf7c2057e385e37ec9b79056a2c41}\label{classFlowSimpleRate_a5addf7c2057e385e37ec9b79056a2c41} 
+{\bfseries Flow\+Simple\+Rate} (const \mbox{\hyperlink{classFlowSimpleRate}{Flow\+Simple\+Rate}} \&other)
+\item 
+\Hypertarget{classFlowSimpleRate_a2a573b929daebce1d23a1dc0ddeaf70c}\label{classFlowSimpleRate_a2a573b929daebce1d23a1dc0ddeaf70c} 
+\mbox{\hyperlink{classFlowSimpleRate}{Flow\+Simple\+Rate}} \& {\bfseries operator=} (const \mbox{\hyperlink{classFlowSimpleRate}{Flow\+Simple\+Rate}} \&other)
+\item 
+\Hypertarget{classFlowSimpleRate_a7435528a305b8f5ecd9893df87c05257}\label{classFlowSimpleRate_a7435528a305b8f5ecd9893df87c05257} 
+double {\bfseries execute} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classFlow}{Flow}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFlow_ac9975e144e606242748197798e87dd32}{Flow}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \doxylink{classFlow}{Flow} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFlow_a5a65e36c874c5cd5283ac32a33eb0a8b}{Flow}} (const \mbox{\hyperlink{classFlow}{Flow}} \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Flow} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlow_a4da8089ed4e652c414180252d22c8516}{set\+Source}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}s)
+\begin{DoxyCompactList}\small\item\em Sets the source system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlow_a6187a9f827d2c699fa2176b5bf0d05dd}{set\+Target}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}t)
+\begin{DoxyCompactList}\small\item\em Sets the target system. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlow_a1f3858f90d141807377c2640fb5dd0fc}{get\+Source}} () const
+\begin{DoxyCompactList}\small\item\em Gets the source system. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlow_aff8a0f8ca8dc50d37c92ab7556e172b5}{get\+Target}} () const
+\begin{DoxyCompactList}\small\item\em Gets the target system. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classFlow_aa1ad5f820c1f10f9e19c555af8bf69f2}{equation}} ()=0
+\begin{DoxyCompactList}\small\item\em Abstract method that calculates the value transferred by the flow. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classFlow}{Flow}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} {\bfseries source}
+\begin{DoxyCompactList}\small\item\em Pointer to the flow\textquotesingle{}s source system. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} {\bfseries target}
+\begin{DoxyCompactList}\small\item\em Pointer to the flow\textquotesingle{}s target system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Concrete flow implementation for simple exponential decay/growth. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+My\+Vensim/test/funcional/\mbox{\hyperlink{funcional__tests_8cpp}{funcional\+\_\+tests.\+cpp}}\end{DoxyCompactItemize}

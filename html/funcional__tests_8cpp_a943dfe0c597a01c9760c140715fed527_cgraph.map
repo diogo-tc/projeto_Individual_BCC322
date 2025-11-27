@@ -1,0 +1,7 @@
+<map id="complexFuncionalTest" name="complexFuncionalTest">
+<area shape="rect" id="Node000001" title="Executes the functional test involving multiple flows and systems." alt="" coords="5,31,172,56"/>
+<area shape="rect" id="Node000002" href="$classModel.html#aaf586fd6e7de938d23074ab9eee4d33c" title="Adds a new System to the model." alt="" coords="241,5,335,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,30,227,23,228,28,173,35"/>
+<area shape="rect" id="Node000003" href="$classSystem.html#aa7d17369d1034e7d8643a63f69d1901d" title="Gets the system&#39;s current value." alt="" coords="220,55,356,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="173,51,207,55,206,60,172,56"/>
+</map>

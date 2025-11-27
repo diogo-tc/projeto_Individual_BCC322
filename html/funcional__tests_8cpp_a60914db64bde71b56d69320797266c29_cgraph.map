@@ -1,0 +1,7 @@
+<map id="logisticalFuncionalTest" name="logisticalFuncionalTest">
+<area shape="rect" id="Node000001" title="Executes the functional test using a logistical flow." alt="" coords="5,31,175,56"/>
+<area shape="rect" id="Node000002" href="$classModel.html#aaf586fd6e7de938d23074ab9eee4d33c" title="Adds a new System to the model." alt="" coords="243,5,338,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,30,229,23,230,28,175,35"/>
+<area shape="rect" id="Node000003" href="$classSystem.html#aa7d17369d1034e7d8643a63f69d1901d" title="Gets the system&#39;s current value." alt="" coords="223,55,359,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="175,51,209,55,208,60,174,56"/>
+</map>

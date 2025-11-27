@@ -1,0 +1,85 @@
+\doxysection{Flow2 Class Reference}
+\hypertarget{classFlow2}{}\label{classFlow2}\index{Flow2@{Flow2}}
+
+
+Inheritance diagram for Flow2\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{classFlow2__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Flow2\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classFlow2__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classFlow2_aade81ea3a3bc7de91464daeb61cc914a}{equation}} () override
+\begin{DoxyCompactList}\small\item\em Abstract method that calculates the value transferred by the flow. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classFlow}{Flow}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFlow_ac9975e144e606242748197798e87dd32}{Flow}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \doxylink{classFlow}{Flow} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFlow_a5a65e36c874c5cd5283ac32a33eb0a8b}{Flow}} (const \mbox{\hyperlink{classFlow}{Flow}} \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Flow} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlow_a4da8089ed4e652c414180252d22c8516}{set\+Source}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}s)
+\begin{DoxyCompactList}\small\item\em Sets the source system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlow_a6187a9f827d2c699fa2176b5bf0d05dd}{set\+Target}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}t)
+\begin{DoxyCompactList}\small\item\em Sets the target system. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlow_a1f3858f90d141807377c2640fb5dd0fc}{get\+Source}} () const
+\begin{DoxyCompactList}\small\item\em Gets the source system. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlow_aff8a0f8ca8dc50d37c92ab7556e172b5}{get\+Target}} () const
+\begin{DoxyCompactList}\small\item\em Gets the target system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classFlow}{Flow}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} {\bfseries source}
+\begin{DoxyCompactList}\small\item\em Pointer to the flow\textquotesingle{}s source system. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} {\bfseries target}
+\begin{DoxyCompactList}\small\item\em Pointer to the flow\textquotesingle{}s target system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classFlow2_aade81ea3a3bc7de91464daeb61cc914a}\label{classFlow2_aade81ea3a3bc7de91464daeb61cc914a} 
+\index{Flow2@{Flow2}!equation@{equation}}
+\index{equation@{equation}!Flow2@{Flow2}}
+\doxysubsubsection{\texorpdfstring{equation()}{equation()}}
+{\footnotesize\ttfamily double Flow2\+::equation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Abstract method that calculates the value transferred by the flow. 
+
+Must be implemented by derived classes. \begin{DoxyReturn}{Returns}
+Numerical value of the flow equation. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classFlow_aa1ad5f820c1f10f9e19c555af8bf69f2}{Flow}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{classFlow2_aade81ea3a3bc7de91464daeb61cc914a_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+My\+Vensim/src/\mbox{\hyperlink{src_2main_8cpp}{main.\+cpp}}\end{DoxyCompactItemize}

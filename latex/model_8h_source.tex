@@ -1,0 +1,36 @@
+\doxysection{model.\+h}
+\hypertarget{model_8h_source}{}\label{model_8h_source}\index{MyVensim/src/model.h@{MyVensim/src/model.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ MODEL\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ MODEL\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}system.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}flow.h"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classModel}{Model}}\ \{}
+\DoxyCodeLine{00017\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00021\ \ \ \ \ std::vector<System*>\ systems;}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00026\ \ \ \ \ std::vector<Flow*>\ flows;}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{classModel_ae3b375de5f6df4faf74a95d64748e048}{Model}}();}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{classModel_ae3b375de5f6df4faf74a95d64748e048}{Model}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classModel}{Model}}\&\ model);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00043\ \ \ \ \ \mbox{\hyperlink{classModel_ad6ebd2062a0b823db841a0b88baac4c0}{\string~Model}}();}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classModel}{Model}}\&\ \mbox{\hyperlink{classModel_a7d8664838115cf7013b33bd9dd52c53d}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classModel}{Model}}\&\ model);}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00061\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}*\ \mbox{\hyperlink{classModel_aaf586fd6e7de938d23074ab9eee4d33c}{add}}(\mbox{\hyperlink{classSystem}{System}}*\ s);}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00072\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}*\ \mbox{\hyperlink{classModel_aaf586fd6e7de938d23074ab9eee4d33c}{add}}(\mbox{\hyperlink{classFlow}{Flow}}*\ f);}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classModel_a9645b12759ee80ecb1eb4377cf8db038}{run}}(\textcolor{keywordtype}{int}\ t0,\ \textcolor{keywordtype}{int}\ t1);}
+\DoxyCodeLine{00085\ \};}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

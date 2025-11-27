@@ -1,0 +1,174 @@
+\doxysection{System Class Reference}
+\hypertarget{classSystem}{}\label{classSystem}\index{System@{System}}
+
+
+Represents a system that stores a numerical value.  
+
+
+
+
+{\ttfamily \#include $<$system.\+h$>$}
+
+
+
+Collaboration diagram for System\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classSystem__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSystem_af80bdd142bb0b158eda8ae4dbff09872}{System}} (double v=0.\+0)
+\begin{DoxyCompactList}\small\item\em Canonical constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSystem_ae95d7374f80fdfaee096e95c1abc438c}{System}} (const \mbox{\hyperlink{classSystem}{System}} \&other)
+\begin{DoxyCompactList}\small\item\em Canonical copy constructor. \end{DoxyCompactList}\item 
+\Hypertarget{classSystem_a3be70bb338e3f062f821173fd15680d0}\label{classSystem_a3be70bb338e3f062f821173fd15680d0} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+System} ()
+\begin{DoxyCompactList}\small\item\em Canonical destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSystem_a1882ddf97ae81fc751283365d9d89ade}{set\+Value}} (double v)
+\begin{DoxyCompactList}\small\item\em Sets the system\textquotesingle{}s value. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classSystem_aa7d17369d1034e7d8643a63f69d1901d}{get\+Value}} () const
+\begin{DoxyCompactList}\small\item\em Gets the system\textquotesingle{}s current value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSystem_aacfcdaee7f4ec3dd4e8f6a94d6ae732f}{add\+Value}} (double dv)
+\begin{DoxyCompactList}\small\item\em Increments the system\textquotesingle{}s value. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classSystem}{System}} \& \mbox{\hyperlink{classSystem_aabadc274be27cefa61d9e3b583b25d71}{operator=}} (const \mbox{\hyperlink{classSystem}{System}} \&other)
+\begin{DoxyCompactList}\small\item\em Canonical assignment operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a system that stores a numerical value. 
+
+The \doxylink{classSystem}{System} class is responsible for maintaining a value that can be modified directly or incremented. It is used as a fundamental element in dynamic systems modeling. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classSystem_af80bdd142bb0b158eda8ae4dbff09872}\label{classSystem_af80bdd142bb0b158eda8ae4dbff09872} 
+\index{System@{System}!System@{System}}
+\index{System@{System}!System@{System}}
+\doxysubsubsection{\texorpdfstring{System()}{System()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily System\+::\+System (\begin{DoxyParamCaption}\item[{double}]{v = {\ttfamily 0.0} }\end{DoxyParamCaption})}
+
+
+
+Canonical constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Initial value of the system (default = 0.\+0). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classSystem_ae95d7374f80fdfaee096e95c1abc438c}\label{classSystem_ae95d7374f80fdfaee096e95c1abc438c} 
+\index{System@{System}!System@{System}}
+\index{System@{System}!System@{System}}
+\doxysubsubsection{\texorpdfstring{System()}{System()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily System\+::\+System (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSystem}{System}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Canonical copy constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Other \doxylink{classSystem}{System} object to be copied. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classSystem_aacfcdaee7f4ec3dd4e8f6a94d6ae732f}\label{classSystem_aacfcdaee7f4ec3dd4e8f6a94d6ae732f} 
+\index{System@{System}!addValue@{addValue}}
+\index{addValue@{addValue}!System@{System}}
+\doxysubsubsection{\texorpdfstring{addValue()}{addValue()}}
+{\footnotesize\ttfamily void System\+::add\+Value (\begin{DoxyParamCaption}\item[{double}]{dv }\end{DoxyParamCaption})}
+
+
+
+Increments the system\textquotesingle{}s value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dv} & Amount to be added to the current value. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{classSystem_aacfcdaee7f4ec3dd4e8f6a94d6ae732f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classSystem_aa7d17369d1034e7d8643a63f69d1901d}\label{classSystem_aa7d17369d1034e7d8643a63f69d1901d} 
+\index{System@{System}!getValue@{getValue}}
+\index{getValue@{getValue}!System@{System}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily double System\+::get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the system\textquotesingle{}s current value. 
+
+\begin{DoxyReturn}{Returns}
+The system\textquotesingle{}s value. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSystem_aa7d17369d1034e7d8643a63f69d1901d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classSystem_aabadc274be27cefa61d9e3b583b25d71}\label{classSystem_aabadc274be27cefa61d9e3b583b25d71} 
+\index{System@{System}!operator=@{operator=}}
+\index{operator=@{operator=}!System@{System}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classSystem}{System}} \& System\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSystem}{System}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Canonical assignment operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \doxylink{classSystem}{System} object to be copied. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to the current object after assignment. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{classSystem_aabadc274be27cefa61d9e3b583b25d71_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classSystem_a1882ddf97ae81fc751283365d9d89ade}\label{classSystem_a1882ddf97ae81fc751283365d9d89ade} 
+\index{System@{System}!setValue@{setValue}}
+\index{setValue@{setValue}!System@{System}}
+\doxysubsubsection{\texorpdfstring{setValue()}{setValue()}}
+{\footnotesize\ttfamily void System\+::set\+Value (\begin{DoxyParamCaption}\item[{double}]{v }\end{DoxyParamCaption})}
+
+
+
+Sets the system\textquotesingle{}s value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & New value. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{classSystem_a1882ddf97ae81fc751283365d9d89ade_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+My\+Vensim/src/system.\+h\item 
+My\+Vensim/src/\mbox{\hyperlink{system_8cpp}{system.\+cpp}}\end{DoxyCompactItemize}
