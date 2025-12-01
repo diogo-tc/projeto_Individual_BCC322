@@ -12,13 +12,13 @@ product:
 	./bin/product
 
 build_unit_test: dll
-	@g++ ./test/unit/*.cpp ./bin/libbib.so -o ./bin/unit_tests
+	@g++ ./test/unit/*.cpp ./bin/libbib.so -I./src -o ./bin/unit_tests
 
 unit:
 	./bin/unit_tests
 
 build_func_test: dll
-	@g++ ./test/funcional/*.cpp ./bin/libbib.so -o ./bin/funcional_tests
+	@g++ ./test/funcional/*.cpp ./bin/libbib.so -I./src -o ./bin/funcional_tests
 
 funcional: 
 	./bin/funcional_tests

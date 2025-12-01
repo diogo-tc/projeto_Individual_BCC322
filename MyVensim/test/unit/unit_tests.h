@@ -1,12 +1,14 @@
-#ifndef FUNCIONAL_TESTS_H
-#define FUNCIONAL_TESTS_H
+#ifndef UNIT_TESTS_H
+#define UNIT_TESTS_H
 
 /**
- * @brief Executes the functional test of the exponential model.
- *
- * Tests whether the exponential flow produces the expected values
- * throughout the simulation.
+ * @file unit_tests.h
+ * @brief Declara testes unitários de funções globais.
  */
-void basicSystemTest(); 
+
+/**
+ * @brief Executa todos os testes unitários de funções globais.
+ */
+void run_unit_tests_globals(void);
 
 #endif
