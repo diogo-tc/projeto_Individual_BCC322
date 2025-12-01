@@ -18,11 +18,11 @@ public:
     }
 };
 
-void unit_Model_constructor(void) {
+void unit_Model_constructor() {
     Model m; // apenas validar que instancia
 }
 
-void unit_Model_addSystem(void) {
+void unit_Model_addSystem() {
     Model m;
     System s1(10);
     System s2(20);
@@ -31,13 +31,13 @@ void unit_Model_addSystem(void) {
     m.add(&s2);
 }
 
-void unit_Model_addFlow(void) {
+void unit_Model_addFlow() {
     Model m;
     TestFlow2 f;
     m.add(&f);
 }
 
-void unit_Model_run(void) {
+void unit_Model_run() {
     Model m;
     System s1(10);
     System s2(0);
@@ -56,7 +56,7 @@ void unit_Model_run(void) {
     assert(s2.getValue() == 5);
 }
 
-void run_unit_tests_Model(void) {
+void run_unit_tests_Model() {
     unit_Model_constructor();
     unit_Model_addSystem();
     unit_Model_addFlow();

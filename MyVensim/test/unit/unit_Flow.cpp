@@ -14,41 +14,41 @@ public:
     double equation() override { return 0.0; }
 };
 
-void unit_Flow_constructor(void) {
+void unit_Flow_constructor() {
     TestFlow f;
     assert(f.getSource() == nullptr);
     assert(f.getTarget() == nullptr);
 }
 
-void unit_Flow_setSource(void) {
+void unit_Flow_setSource() {
     TestFlow f;
     System s(10);
     f.setSource(&s);
     assert(f.getSource() == &s);
 }
 
-void unit_Flow_setTarget(void) {
+void unit_Flow_setTarget() {
     TestFlow f;
     System s(20);
     f.setTarget(&s);
     assert(f.getTarget() == &s);
 }
 
-void unit_Flow_getSource(void) {
+void unit_Flow_getSource() {
     TestFlow f;
     System s(10);
     f.setSource(&s);
     assert(f.getSource()->getValue() == 10);
 }
 
-void unit_Flow_getTarget(void) {
+void unit_Flow_getTarget() {
     TestFlow f;
     System s(40);
     f.setTarget(&s);
     assert(f.getTarget()->getValue() == 40);
 }
 
-void run_unit_tests_Flow(void) {
+void run_unit_tests_Flow() {
     unit_Flow_constructor();
     unit_Flow_setSource();
     unit_Flow_setTarget();

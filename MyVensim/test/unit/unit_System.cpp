@@ -7,7 +7,7 @@
 #include "../../src/system.h"
 #include <cassert>
 
-void unit_System_constructor(void) {
+void unit_System_constructor() {
     System s1;
     assert(s1.getValue() == 0);
 
@@ -15,28 +15,27 @@ void unit_System_constructor(void) {
     assert(s2.getValue() == 10);
 }
 
-void unit_System_destructor(void) {
-    // Nada para testar — sem alocação dinâmica
+void unit_System_destructor() {
 }
 
-void unit_System_getValue(void) {
+void unit_System_getValue() {
     System s(27.5);
     assert(s.getValue() == 27.5);
 }
 
-void unit_System_setValue(void) {
+void unit_System_setValue() {
     System s;
     s.setValue(123.45);
     assert(s.getValue() == 123.45);
 }
 
-void unit_System_addValue(void) {
+void unit_System_addValue() {
     System s(10);
     s.addValue(5);
     assert(s.getValue() == 15);
 }
 
-void run_unit_tests_System(void) {
+void run_unit_tests_System() {
     unit_System_constructor();
     unit_System_destructor();
     unit_System_getValue();

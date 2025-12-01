@@ -7,21 +7,21 @@
 #define UNIT_SYSTEM_H
 
 /// Testa o construtor de System.
-void unit_System_constructor(void);
+void unit_System_constructor();
 
 /// Testa o destrutor de System.
-void unit_System_destructor(void);
+void unit_System_destructor();
 
 /// Testa o método getValue().
-void unit_System_getValue(void);
+void unit_System_getValue();
 
 /// Testa o método setValue().
-void unit_System_setValue(void);
+void unit_System_setValue();
 
 /// Testa o método addValue().
-void unit_System_addValue(void);
+void unit_System_addValue();
 
 /// Executa todos os testes unitários de System.
-void run_unit_tests_System(void);
+void run_unit_tests_System();
 
 #endif

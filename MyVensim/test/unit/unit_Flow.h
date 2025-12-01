@@ -7,21 +7,21 @@
 #define UNIT_FLOW_H
 
 /// Testa o construtor de Flow.
-void unit_Flow_constructor(void);
+void unit_Flow_constructor();
 
 /// Testa o método setSource().
-void unit_Flow_setSource(void);
+void unit_Flow_setSource();
 
 /// Testa o método setTarget().
-void unit_Flow_setTarget(void);
+void unit_Flow_setTarget();
 
 /// Testa o método getSource().
-void unit_Flow_getSource(void);
+void unit_Flow_getSource();
 
 /// Testa o método getTarget().
-void unit_Flow_getTarget(void);
+void unit_Flow_getTarget();
 
 /// Executa todos os testes unitários de Flow.
-void run_unit_tests_Flow(void);
+void run_unit_tests_Flow();
 
 #endif

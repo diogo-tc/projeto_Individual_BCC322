@@ -7,5 +7,5 @@
 #include <cassert>
 
 // Como não existem funções globais, nada a testar aqui
-void run_unit_tests_globals(void) {
+void run_unit_tests_globals() {
 }

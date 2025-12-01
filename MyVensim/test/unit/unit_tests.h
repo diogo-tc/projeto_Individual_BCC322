@@ -9,6 +9,6 @@
 /**
  * @brief Executa todos os testes unitários de funções globais.
  */
-void run_unit_tests_globals(void);
+void run_unit_tests_globals();
 
 #endif
